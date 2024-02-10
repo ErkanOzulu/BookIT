@@ -29,9 +29,10 @@ public class Environment {
 
 
             try {
-
+                //where is our file? path is holding that one
                 String path = System.getProperty("user.dir") + "/src/test/resources/Environments/" + environment + ".properties";
-                // C:\Users\Zulpikar\IdeaProjects\EU9-BookIT\src\test\resources\Environments\qa1.properties
+                // "user.dir -->> project location in any computer -->C:\Users\Data\IdeaProjects
+                // C:\Users\Data\IdeaProjects\EU10-BookIT\src\test\resources\Environments\qa1.properties
 
                 FileInputStream input = new FileInputStream(path);
                 properties = new Properties();

@@ -19,8 +19,8 @@ Feature: Create student
   Scenario: test config
     Given I get env properties
 
-  @wip
-  Scenario: Create student a teacher and verify status code 201
+
+  Scenario: Create student/teacher and verify status code 201
     Given I logged Bookit api as "teacher"
     When I send POST request to "/api/students/student" endpoint with following information
       | first-name      | harold              |
